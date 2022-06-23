@@ -1,0 +1,22 @@
+! name: MMA Search
+! description: Rerank results to boost content related mixed martial arts
+! public: true
+! author: Argo
+! avatar: #000000
+
+! Remove results not matching any other rule
+$discard
+
+
+! Boost some results
+$boost=3,site=tapology.com
+$boost=3,site=mixedmartialarts.com
+$boost=3,site=mma.tv
+$boost=3,site=mmajunkie.com
+$boost=3,site=mmafighting.com
+$boost=3,site=sherdog.com
+$boost=3,site=bloodyelbow.com
+$boost=3,site=bjpenn.com
+$boost=3,site=youtube.com/c/ChaelSonnenOfficial
+$boost=3,site=youtube.com/user/TheWeasle17
+$boost=3,site=youtube.com/mmafighting
